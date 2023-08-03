@@ -1,0 +1,14 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width   : 25vw;
+    padding: 3%;
+    .TextField{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+
+

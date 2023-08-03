@@ -1,0 +1,25 @@
+.toggel_Container{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.form_Content{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px 0px 1.5rem;
+    border: 0px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.buttoun_Container{
+    display: flex;
+    align-items: center;
+}

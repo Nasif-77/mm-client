@@ -1,0 +1,21 @@
+.paper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1%;
+    width: 75vw;
+    margin-top: 8%;
+
+    .box1 {
+        width: 100%;
+
+        .formControl {
+            margin: 1%;
+            min-width: 200px;
+        }
+    }
+
+    .box2 {
+        width: 100%;
+    }
+}

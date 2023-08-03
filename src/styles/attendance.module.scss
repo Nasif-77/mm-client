@@ -1,0 +1,132 @@
+.main{
+    width: 80vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    // background-color: red;
+}
+
+.subMain {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+.txtAttendance {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.calendar {
+    border: 1px solid black;
+    margin: 0 !important;
+}
+
+.datePicker{
+    div {
+        // width: 180px;
+    }
+    svg {
+        // display: none;
+    }
+}
+
+.attendanceBox {
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.topPanel {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #7277a1;
+}
+
+.userList {
+    width: 100%;
+    height: 100%;
+    border-top: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    
+    button {
+        margin-left: 30px;    
+    }
+
+    h5 {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+}
+
+.CheckInAndCheckOut {
+    width: 170px;
+}
+
+.badgeDotVisible span{
+    right: -12px;
+    top: 13px;
+    background-color: orange;
+}
+
+.badgeDotInvisible span{
+    display: none;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.txtChooseDate {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+// For the users in userlist who doesn't have attendance 
+.noAttendance {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 20px;
+    border: 1px solid rgb(78, 78, 78);
+}
+
+// For the users in userlist who have attendance 
+.attendance {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 20px;
+
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid rgb(78, 78, 78);
+    background-color: #dbe7f3;
+}
+
+.toggleButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
