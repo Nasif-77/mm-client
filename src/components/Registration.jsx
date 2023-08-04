@@ -61,7 +61,7 @@ function Registration({ login, submitLogin, response }) {
             </Typography>
           </Box>
         </Box>
-        <form action="" onSubmit={handleSubmit} autoComplete="off">
+        <form action="" onSubmit={handleSubmit} >
           {!login && (
             <Box className={styles.form_Content}>
               <TextField

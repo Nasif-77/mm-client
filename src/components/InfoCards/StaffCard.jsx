@@ -136,16 +136,7 @@ function StaffCard({ userData }) {
               </Typography>
             </Box>
           )}
-          {userData.role !== '' && (
-            <Box className={styles.Data}>
-              <Typography variant="h6" className={styles.Detailes}>
-                Role:
-              </Typography>
-              <Typography variant="body1" className={styles.data_detailes}>
-                {userData.role}
-              </Typography>
-            </Box>
-          )}
+  
 
           {userData.employmentType !== '' && (
             <Box className={styles.Data}>
@@ -242,7 +233,7 @@ function StaffCard({ userData }) {
               </Typography>
             </Box>
           )}
-          {userData.guardian?.phone !== null && (
+          {userData.guardian?.phone !== "" && (
             <Box className={styles.Data}>
               <Typography variant="h6" className={styles.Detailes}>
                 Guardian Phone Number:
@@ -288,9 +279,7 @@ function StaffCard({ userData }) {
           <Typography variant="h6" className={styles.name}>
             {userData.name}
           </Typography>
-          <Box className={styles.user_Role}>
-            <span>{userData.role}</span>
-          </Box>
+       
         </Box>
         {flag === 'info' ? <>
 
