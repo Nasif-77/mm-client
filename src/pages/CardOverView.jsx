@@ -57,17 +57,17 @@ function CardOverView() {
     <div>
       {userData?.isDeleted === false ? (
         <div>
-          {(user.role === "Super Admin" || user.permissions.includes(type)) && (
+          {(user.role === "Super Admin" || user?.permissions?.includes(type)) && (
             <>
               {type === "inquiries" ? (
                 <InquiryCard userData={userData} />
               ) : null}
               {type === "students" ? <StudentCard userData={userData} /> : null}
               {type === "mentors" ? <StaffCard userData={userData} /> : null}
-              {type === "courses" ? <CourseCard userData={userData} /> : null}
               {type === "batches" ? <BatchCard userData={userData} /> : null}
             </>
           )}
+          {type === "courses" ? <CourseCard userData={userData} /> : null}
           {type === "assignments" ? (
             <AssignmentCard userData={userData} />
           ) : null}
