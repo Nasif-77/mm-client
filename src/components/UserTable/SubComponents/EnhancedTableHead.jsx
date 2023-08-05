@@ -33,7 +33,7 @@ function EnhancedTableHead({ order, orderBy, onRequestSort, type }) {
                 </TableCell>
 
 
-                {type === 'inquiries' || type === 'students' ?
+                {type === 'inquiries' || type === 'students' || type === 'staffs' ?
                     <TableCell
                         align={'left'}
                         padding={'normal'}
@@ -162,7 +162,7 @@ function EnhancedTableHead({ order, orderBy, onRequestSort, type }) {
                             </TableSortLabel>
                         </TableCell>
 
-                        <TableCell
+                        {/* <TableCell
                             align={'left'}
                             padding={'normal'}
                             sortDirection={orderBy === 'role' ? order : false}
@@ -179,7 +179,7 @@ function EnhancedTableHead({ order, orderBy, onRequestSort, type }) {
                                     </Box>
                                 ) : null}
                             </TableSortLabel>
-                        </TableCell>
+                        </TableCell> */}
                     </>
                     : ''}
 

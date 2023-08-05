@@ -21,7 +21,6 @@ function AssignmentPage() {
                 if (isMounted) setAssignments(response.data.data)
 
             } catch (error) {
-                console.log(error)
             }
         }
         getAssignments()

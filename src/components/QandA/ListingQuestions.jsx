@@ -75,12 +75,11 @@ function ListingQuestions({ questions }) {
                 <TableBody>
                     {questions.map(question => {
                         question.createdAt = dayjs(question.createdAt).format('DD MMM YYYY')
-                        console.log(question.createdBy._id === userId)
                         return (
                             <TableRow key={question._id} className={styles.ListItem}>
                                 <TableCell  >
                                     <Button onClick={() => navigate(`${question._id}`)}>
-                                        {question.question?.slice(0, 20)}.....
+                                        {question.question?.length > 20 ? question.question?.slice(0, 20) + '.....' : question?.question}
                                     </Button>
                                     {question.createdBy._id === userId && <Button onClick={() => { handleOpen(); setQuestion(question) }} variant='contained' color='error'>
                                         Delete question

@@ -144,7 +144,7 @@ function StudentForm({ edit, data }) {
       grade: "",
       week: "",
       remark: "",
-      status: "",
+      status: "Active",
     }
 
   const studentFormik = useFormik({

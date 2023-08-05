@@ -1,4 +1,4 @@
-import { TableCell, TableRow } from '@mui/material';
+import { Button, TableCell, TableRow } from '@mui/material';
 import React from 'react'
 import { Link } from 'react-router-dom';
 
@@ -20,9 +20,14 @@ function Batch({ item, type }) {
                 <TableCell
                     component="th"
                     scope="row"
-                    
+
                 >
-                    <Link to={`/${type}/${item._id}`}>{item.name}</Link>
+                    <Link to={`/${type}/${item._id}`}>
+                        <Button variant='contained'>
+                            {item.name}
+                        </Button>
+                    </Link>
+
                 </TableCell>
                 <TableCell padding="normal" align="left">
                     {item.students?.length}

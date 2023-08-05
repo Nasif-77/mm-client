@@ -85,7 +85,6 @@ function UserCreateForm({ edit, data }) {
     onSubmit: () => {
       if (values.permissions.length > 0) sentValues()
       else {
-        console.log(touched.permissions, errors.permissions)
         errors.permissions = 'Please select one permission';
         touched.permissions = true;
       }
@@ -475,8 +474,7 @@ function UserCreateForm({ edit, data }) {
         )}
 
         <Button type={"submit"} disabled={buttonDisable}>Submit</Button>
-        {/* <Button onClick={() => console.log(values.permissions)} disabled={buttonDisable}>Submit</Button>
-        <Button onClick={() => staffFormik.validateForm().then(e => console.log(e))} disabled={buttonDisable}>Submit</Button> */}
+      
 
       </Box>
       <ToastContainer />

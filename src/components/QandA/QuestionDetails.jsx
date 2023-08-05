@@ -29,7 +29,6 @@ function QuestionDetails() {
 
                 if (isMounted) setDetails(response.data.data)
             } catch (error) {
-                console.log(error)
             }
         }
 
@@ -45,7 +44,6 @@ function QuestionDetails() {
 
                 if (isMounted) setAnswers(response.data.data)
             } catch (error) {
-                console.log(error)
             }
         }
 
@@ -73,7 +71,6 @@ function QuestionDetails() {
             }
 
         } catch (error) {
-            console.log(error)
         }
     }
 

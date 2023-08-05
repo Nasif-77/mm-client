@@ -54,7 +54,6 @@ function AssignmentCard({ userData }) {
                 if (isMounted) setStudents(response.data.data)
 
             } catch (error) {
-                console.log(error)
             }
         }
 
