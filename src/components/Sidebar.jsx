@@ -282,7 +282,7 @@ function SideBar() {
             </Link>
             }
 
-            {(user?.permissions?.includes('courses') || user?.role === 'Super Admin') && <Link to="/courses">
+           <Link to="/courses">
               <ListItem component="div">
                 <ListItemButton selected={selected === 'courses'}>
                   <ListItemIcon>
@@ -292,7 +292,7 @@ function SideBar() {
                 </ListItemButton>
               </ListItem>
             </Link>
-            }
+            
 
 
             {user?.role === 'students' && <Link to="/profile">

@@ -98,6 +98,7 @@ function ProfilePage() {
       });
   }
 
+
   const cardHead = () => {
     return (
       <Box className={styles.mainContent}>
@@ -109,9 +110,7 @@ function ProfilePage() {
         <Typography variant="h6" className={styles.name}>
           {userData.name}
         </Typography>
-        <Box className={styles.user_Role}>
-          <span>{userData.role}</span>
-        </Box>
+      
       </Box>
     )
   }
@@ -188,7 +187,7 @@ function ProfilePage() {
               </Typography>
             </Box>
           )}
-          {userData.guardian?.phone !== "" && (
+          {(userData?.guardian?.phone !== "" || userData.guardian?.phone !== null) && (
             <Box className={styles.Data}>
               <Typography variant="h6" className={styles.Detailes}>
                 Guardian Phone Number:
@@ -223,16 +222,7 @@ function ProfilePage() {
 
           {user.role === 'staffs' ? <>
 
-            {userData.role !== '' && (
-              <Box className={styles.Data}>
-                <Typography variant="h6" className={styles.Detailes}>
-                  Role:
-                </Typography>
-                <Typography variant="body1" className={styles.data_detailes}>
-                  {userData.role}
-                </Typography>
-              </Box>
-            )}
+
 
             {userData.employmentType !== '' && (
               <Box className={styles.Data}>
@@ -294,16 +284,6 @@ function ProfilePage() {
                 </Box>
               )}
 
-              {userData?.advisor !== '' && (
-                <Box className={styles.Data}>
-                  <Typography variant="h6" className={styles.Detailes}>
-                    Advisor:
-                  </Typography>
-                  <Typography variant="body1" className={styles.data_detailes}>
-                    {userData?.advisor}
-                  </Typography>
-                </Box>
-              )}
 
               {userData?.remark !== "" && (
                 <Box className={styles.Data}>
@@ -338,16 +318,6 @@ function ProfilePage() {
                 </Box>
               )}
 
-              {userData?.branch !== '' && (
-                <Box className={styles.Data}>
-                  <Typography variant="h6" className={styles.Detailes}>
-                    Branch:
-                  </Typography>
-                  <Typography variant="body1" className={styles.data_detailes}>
-                    {userData?.branch}
-                  </Typography>
-                </Box>
-              )}
 
             </>}
 

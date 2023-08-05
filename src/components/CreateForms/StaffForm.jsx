@@ -34,7 +34,7 @@ function UserCreateForm({ edit, data }) {
   };
 
   const [permissions, setPermissions] = useState({
-    attendence: false, batch: false, course: false, students: false,
+    attendence: false, batch: false, students: false,
   });
 
   const initialValues = edit ?
@@ -215,17 +215,6 @@ function UserCreateForm({ edit, data }) {
                 />
               }
               label="Batch"
-            />
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={values.permissions.includes("courses")}
-                  onBlur={handleBlur}
-                  onChange={handlePermissions}
-                  name="courses"
-                />
-              }
-              label="Course"
             />
             <FormControlLabel
               control={
